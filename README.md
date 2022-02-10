@@ -10,8 +10,6 @@ __umplePath__
 Path to the umple ump folder where temporary user folders are created.  
 __tempPath__  
 A directory where temporary files can be written.  
-__port=8080__  
-Port of application  
 __mainContainerName__  
 Name of always running container.  
 __tempContainerName__  
