@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 const server = http.createServer(app);
-const port=8080;
+const port=4400;
 const basePath= __dirname+"/models/"; //current working path
 
 // Declar max usage limit and max requests

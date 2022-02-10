@@ -18,7 +18,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
+EXPOSE 4400
 
 RUN chown -R nodeuser:nodeuser /usr/src/app
 USER nodeuser
