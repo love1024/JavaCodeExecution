@@ -91,7 +91,7 @@ class DockerExecution {
 
     readConfig() {
         const file = fs.readFileSync('./config.cfg', 'utf8');
-        const config = file.split('\r\n');
+        const config = file.toString().replace(/\r\n/g,'\n').split('\n');
         
         const obj = {};
         for(let c of config) {

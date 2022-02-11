@@ -43,6 +43,7 @@ app.post('/run' ,function(req, res)
                 return res.send(error);
             }
             console.log("Given path:",req.body.path);
+            console.log("Base path: ", path);
 
             // Read main file content
             const mainFunctions = readMainFile(path);

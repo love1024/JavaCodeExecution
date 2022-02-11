@@ -21,6 +21,7 @@ COPY . .
 EXPOSE 4400
 
 RUN chown -R nodeuser:nodeuser /usr/src/app
+RUN chown -R nodeuser:nodeuser /home
 USER nodeuser
 
 CMD [ "npm", "start" ]

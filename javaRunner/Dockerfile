@@ -6,7 +6,7 @@ RUN adduser  -D -H -S nodeuser -G nodeuser
 RUN mkdir output 
 RUN mkdir input
 
-COPY runner/javaRunner.sh /
+COPY javaRunner/javaRunner.sh /
 RUN chmod +x /javaRunner.sh
 RUN chown -R nodeuser /output
 RUN chown -R nodeuser /input
